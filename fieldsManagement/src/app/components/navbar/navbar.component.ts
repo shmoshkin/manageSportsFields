@@ -9,9 +9,9 @@ import materialize from 'materialize-css'
 })
 export class NavbarComponent implements OnInit, AfterContentInit {
   ngAfterContentInit(): void {
-    $( document ).ready(function() {
-      let sideNavElem = $('.button-collapse').sideNav();
-    });
+    // $( document ).ready(function() {
+    //   let sideNavElem = $('.button-collapse').sideNav();
+    // });
   }
 
   constructor() {
@@ -19,9 +19,9 @@ export class NavbarComponent implements OnInit, AfterContentInit {
    }
 
   ngOnInit() {
-    $( document ).ready(function() {
-      let sideNavElem = $('.button-collapse').sideNav();
-    });
+    // $( document ).ready(function() {
+    //   let sideNavElem = $('.button-collapse').sideNav();
+    // });
   }
 
 }
