@@ -20,8 +20,8 @@ export class FieldComponent implements OnInit {
   }
 
   onAddField(){
-    debugger;
-    Materialize.toast('I am a toast', 4000,'',function(){
+    
+    Materialize.Toast('I am a toast', 4000,'',function(){
       alert('Your toast was dismissed')
     })
   }
