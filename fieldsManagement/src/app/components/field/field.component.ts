@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {materialize, Materialize} from 'materialize-css'  
 @Component({
   selector: 'app-field',
   templateUrl: './field.component.html',
@@ -19,4 +19,10 @@ export class FieldComponent implements OnInit {
 
   }
 
+  onAddField(){
+    debugger;
+    Materialize.toast('I am a toast', 4000,'',function(){
+      alert('Your toast was dismissed')
+    })
+  }
 }
