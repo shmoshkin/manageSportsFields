@@ -19,7 +19,8 @@ export class InMemoryService implements InMemoryDbService {
         "name": "field-1",
         "location": "Rabin",
         "type": "soccer",
-        "isAvailable": true
+        "isAvailable": true,
+        "description": 'Very good soccer field in a middle of a quite neighborhood'
     },
     {
         "id": 2,
