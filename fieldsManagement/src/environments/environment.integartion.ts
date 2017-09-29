@@ -1,7 +1,8 @@
 import { IEnvironment } from "./IEnvironment";
 
 export const environment: IEnvironment = {
-  production: true,
-  dataMocking: false,
-  type: 'Production'
-};
+    production: false,
+    dataMocking: false,
+    type: 'Integration'
+  };
+  
