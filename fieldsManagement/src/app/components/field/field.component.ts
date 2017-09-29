@@ -9,6 +9,7 @@ import { Field } from './field';
 })
 
 export class FieldComponent implements OnInit {
+  
   field: Field;
 
   constructor(){} 
