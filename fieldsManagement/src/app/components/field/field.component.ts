@@ -1,6 +1,6 @@
-import {Injectable, Component, OnInit } from '@angular/core';
-import {materialize, Materialize} from 'materialize-css'
+import { Injectable, Component, OnInit } from '@angular/core';
 import { Field } from './field';
+import { FieldService } from './field.service';
 
 @Component({
   selector: 'app-field',
@@ -12,16 +12,12 @@ export class FieldComponent implements OnInit {
   
   field: Field;
 
-  constructor(){} 
+  constructor(private _fieldService: FieldService){} 
 
   ngOnInit() {
-  
-  }
-
-  
-
-  onAddField(){    
-    
-    // Add some code for open card
+    this._fieldService.getField(1).subscribe(
+      (field: Field) => {
+      this.field = field;
+    });
   }
 }
