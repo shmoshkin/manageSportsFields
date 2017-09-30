@@ -15,8 +15,8 @@ export class InvitationDetailsComponent implements OnInit {
   
   constructor() 
   {
-    this.times = "10 - 12 am";
-    this.fieldName = "rabin";
+    this.times = "10 - 12 am, 12 march 2017";
+    this.fieldName = "rabin - field 1";
   }
 
   ngOnInit() {
