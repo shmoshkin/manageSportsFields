@@ -44,4 +44,4 @@ Thumbs.db
 
 # Stylesheets
 *.css
-#.css.map
+*.css.map
