@@ -5,6 +5,6 @@ export interface Field extends AppEntity {
     location: string;
     name: string;
     type: number;
-    isAvailable?: boolean;
+    isAvailable: boolean;
     description?: string;
 }

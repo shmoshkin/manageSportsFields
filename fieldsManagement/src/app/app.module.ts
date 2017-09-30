@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { HttpModule } from '@angular/http';
+import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -34,6 +35,7 @@ if (environment.dataMocking) {
   ],
   imports: [
     BrowserModule,
+    MaterializeModule,
     HttpModule,
     ...devImportsOnly
   ],

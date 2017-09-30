@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
+import {MaterializeAction} from 'angular2-materialize';
+
 
 @Component({
   selector: 'app-invitation-details',
@@ -6,10 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./invitation-details.component.scss']
 })
 export class InvitationDetailsComponent implements OnInit {
-
-  constructor() { }
+  
+  fieldName: string;
+  times: string;
+  toastActions = new EventEmitter<string|MaterializeAction>();
+  
+  constructor() 
+  {
+    this.times = "10 - 12 am";
+    this.fieldName = "rabin";
+  }
 
   ngOnInit() {
   }
 
+  onCancelInvitation(){
+
+  }
+
+  onAgreeInvitation(){
+    
+    this.toastActions.emit('toast')
+  }
 }
