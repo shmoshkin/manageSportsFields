@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "fields-display.component.scss"
+    ],
+    "names": [],
+    "file": "fields-display.component.css"
+}
