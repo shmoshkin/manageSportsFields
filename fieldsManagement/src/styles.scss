@@ -1,4 +1,5 @@
 @import './background';
+@import './scrollbar';
 
 @mixin fullSize() {
     width: 100%;
@@ -9,6 +10,7 @@
 
 html {
     @include fullSize();
+    @include universal-scrollbar();
     background-image: $application-background;
 }
 

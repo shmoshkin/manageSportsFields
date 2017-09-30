@@ -1,3 +1,27 @@
-/* No CSS */ 
+.textRTL, .invitationDetails {
+  text-align: right !important;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.invitationDetails {
+  width: 35% !important;
+  height: 50% !important;
+  margin-left: 30% !important;
+  margin-bottom: 15% !important;
+}
+
+.redBackground {
+  background-color: #e57373;
+}
+
+.card-content > p {
+  overflow: auto;
+  max-height: 40px;
+  min-height: 40px;
+}
+ 
 
  /*# sourceMappingURL= field.component.css.map */

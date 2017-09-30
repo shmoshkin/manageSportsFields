@@ -17,3 +17,12 @@
 .redBackground{
         background-color: #e57373;
 }
+
+.card-content {
+    
+    > p {
+        overflow: auto;
+        max-height: 40px;
+        min-height: 40px;
+    }
+}

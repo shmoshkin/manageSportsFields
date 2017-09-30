@@ -35,6 +35,28 @@ export class InMemoryService implements InMemoryDbService {
         "location": "Lapid",
         "type": "basketball",
         "isAvailable": true
+    },
+    {
+        "id": 4,
+        "name": "field-1",
+        "location": "Sportek",
+        "type": "soccer",
+        "isAvailable": true,
+        "description": 'The A Team project'
+    },
+    {
+        "id": 5,
+        "name": "studium",
+        "location": "Bloomfield",
+        "type": "soccer",
+        "isAvailable": true
+    },
+    {
+        "id": 6,
+        "name": "field-2",
+        "location": "Sportek",
+        "type": "basketball",
+        "isAvailable": true
     }
     ];
 
