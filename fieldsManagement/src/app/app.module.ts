@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgFor } from '@angular/common';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -18,7 +19,9 @@ import { environment } from '../environments/environment';
 // development dependencies
 let devImportsOnly = [];
 if (environment.dataMocking) {
-  devImportsOnly.push(InMemoryWebApiModule.forRoot(InMemoryService, { passThruUnknownUrl: true }));
+  devImportsOnly = [
+    InMemoryWebApiModule.forRoot(InMemoryService, { passThruUnknownUrl: true }) 
+  ];
 }
 
 @NgModule({

@@ -10,7 +10,8 @@ export class FieldService {
   constructor(private _http: Http) { }
 
   getFields() {
-      return this._http.get('api/fields');
+      return this._http.get('api/fields')
+        .map((response: Response) => response.json().data);
   }
 
   getField(id: number): Observable<any> {

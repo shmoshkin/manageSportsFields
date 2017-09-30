@@ -1,4 +1,4 @@
-import { Injectable, Component, OnInit } from '@angular/core';
+import { Injectable, Component, OnInit, Input } from '@angular/core';
 import { Field } from './field';
 import { FieldService } from './field.service';
 
@@ -10,14 +10,10 @@ import { FieldService } from './field.service';
 
 export class FieldComponent implements OnInit {
   
-  field: Field;
+  @Input() field: Field;
 
   constructor(private _fieldService: FieldService){} 
 
   ngOnInit() {
-    this._fieldService.getField(1).subscribe(
-      (field: Field) => {
-      this.field = field;
-    });
   }
 }
