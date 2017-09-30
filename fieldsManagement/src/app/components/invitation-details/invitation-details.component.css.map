@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,KAAK,EAAE,CAAC;EACR,MAAM,EAAE,CAAC;EACT,QAAQ,EAAE,QAAQ;CACrB;;AAED,AAAA,WAAW,CAAC;EACR,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,MAAM,CAAA;EACF,UAAU,EAAE,IAChB;CAAE",
     "sources": [
         "invitation-details.component.scss"
     ],
