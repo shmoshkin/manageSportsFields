@@ -9,9 +9,15 @@ import {MaterializeAction} from 'angular2-materialize';
 })
 export class InvitationDetailsComponent implements OnInit {
   
+  fieldName: string;
+  times: string;
   toastActions = new EventEmitter<string|MaterializeAction>();
   
-  constructor() { }
+  constructor() 
+  {
+    this.times = "10 - 12 am";
+    this.fieldName = "rabin";
+  }
 
   ngOnInit() {
   }

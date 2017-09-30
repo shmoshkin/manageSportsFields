@@ -4,13 +4,23 @@
     <div class="row">
       <div class="input-field col s6">
           <input id="identity" type="text" data-length="9" ng-model="order.userId">
-          <label for="identity">identity</label>
+          <label for="identity">Identity</label>
         </div>
       <div class="input-field col s6">
         <input id="telephone" type="tel" class="validate" ng-model="order.telephone">
-        <label for="telephone">telephone</label>
+        <label for="telephone">Telephone</label>
       </div>
-    </div> 
+    </div>
+    <div class="row"> 
+      <div class="input-field col s12">
+          <input disabled value="{{times}}" ng-model="order.times" id="times" type="text" class="validate">
+          <label for="disabled">Times</label>
+        </div>
+        <div class="input-field col s12">
+          <input disabled value="{{fieldName}}" ng-model="order.fieldName" id="fieldName" type="text" class="validate">
+          <label for="disabled">Field</label>
+        </div>
+    </div>
     <div class="modal-footer bottomRight">
       <a class="modal-action modal-close waves-effect waves-green btn-flat" (click)="onCancelInvitation()">cancel</a>
       <a class="modal-action modal-close waves-effect waves-green btn-flat" (click)="onAgreeInvitation()" materialize [materializeParams]="['order sent!', 3000, 'rounded']" [materializeActions]="toastActions">accept</a>            
