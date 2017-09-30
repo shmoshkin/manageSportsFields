@@ -1,0 +1,19 @@
+<div>
+  <h4 class="centerText">order</h4>
+  <form class="col s12 space">
+    <div class="row">
+      <div class="input-field col s6">
+          <input id="identity" type="text" data-length="9" ng-model="order.userId">
+          <label for="identity">identity</label>
+        </div>
+      <div class="input-field col s6">
+        <input id="telephone" type="tel" class="validate" ng-model="order.telephone">
+        <label for="telephone">telephone</label>
+      </div>
+    </div> 
+    <div class="modal-footer bottomRight">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat" (click)="onCancelInvitation()">cancel</a>
+      <a class="modal-action modal-close waves-effect waves-green btn-flat" (click)="onAgreeInvitation()" materialize [materializeParams]="['order sent!', 3000, 'rounded']" [materializeActions]="toastActions">accept</a>            
+    </div>
+  </form>
+</div>

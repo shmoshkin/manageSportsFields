@@ -1,3 +1,5 @@
-<p>
-  fields-display works!
-</p>
+<div class="row">
+    <div *ngFor="let field of fields" class="col s12 m6 l4">
+        <app-field [field]="field"></app-field>
+    </div>
+</div>
