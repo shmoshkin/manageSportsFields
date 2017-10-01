@@ -19,8 +19,8 @@
         <div class="input-field col s12">
           <input disabled value="{{fieldName}}" ng-model="order.fieldName" id="fieldName" type="text" class="validate">
           <label for="disabled">Field</label>
-        </div>
-    </div>
+        </div>        
+    </div>     
     <div class="modal-footer bottomRight">
       <a class="modal-action modal-close waves-effect waves-green btn-flat" (click)="onCancelInvitation()">cancel</a>
       <a class="modal-action modal-close waves-effect waves-green btn-flat" (click)="onAgreeInvitation()" materialize [materializeParams]="['order sent!', 3000, 'rounded']" [materializeActions]="toastActions">accept</a>            
