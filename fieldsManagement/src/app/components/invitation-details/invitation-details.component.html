@@ -1,27 +1,33 @@
 <div>
-  <h4 class="centerText">order</h4>
+  <h4 class="center-text">order</h4>
   <form class="col s12 space">
     <div class="row">
       <div class="input-field col s6">
-          <input id="identity" type="text" data-length="9" ng-model="order.userId">
+          <input id="identity" type="text" data-length="9" ng-model="userId">
           <label for="identity">Identity</label>
         </div>
       <div class="input-field col s6">
-        <input id="telephone" type="tel" class="validate" ng-model="order.telephone">
+        <input id="telephone" type="tel" class="validate" ng-model="telephone">
         <label for="telephone">Telephone</label>
       </div>
     </div>
+    <div class="row">
+        <div class="input-field col s6">
+          <input disabled value="{{fieldName}}" ng-model="fieldName" id="fieldName" type="text" class="validate">
+          <label for="disabled">Field</label>
+        </div>
+        <div class="input-field col s6">
+          <input disabled value="{{location}}" ng-model="location" id="fieldName" type="text" class="validate">
+          <label for="disabled">Field</label>
+        </div>
+    </div>         
     <div class="row"> 
       <div class="input-field col s12">
-          <input disabled value="{{times}}" ng-model="order.times" id="times" type="text" class="validate">
-          <label for="disabled">Times</label>
-        </div>
-        <div class="input-field col s12">
-          <input disabled value="{{fieldName}}" ng-model="order.fieldName" id="fieldName" type="text" class="validate">
-          <label for="disabled">Field</label>
-        </div>        
-    </div>     
-    <div class="modal-footer bottomRight">
+        <input disabled value="{{times}}" ng-model="times" id="times" type="text" class="validate">
+        <label for="disabled">Times</label>
+      </div>
+    </div>                  
+    <div class="modal-footer bottom-right">
       <a class="modal-action modal-close waves-effect waves-green btn-flat" (click)="onCancelInvitation()">cancel</a>
       <a class="modal-action modal-close waves-effect waves-green btn-flat" (click)="onAgreeInvitation()" materialize [materializeParams]="['order sent!', 3000, 'rounded']" [materializeActions]="toastActions">accept</a>            
     </div>
